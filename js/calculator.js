@@ -21,6 +21,14 @@ export class Calculator{
 		return differenceInSec;
 	}
 
+	dateDifferenceInYear(startDate, endDate){
+		let secs = this.dateDifference(startDate, endDate);
+		let years = secs / (365 * 24 * 3600);
+		years = Math.round(years)
+		return years; 
+
+	}
+
 	ageInMercury(ageAtEarth){
 		let age = ageAtEarth * 0.24;
 		return age;
@@ -40,7 +48,7 @@ export class Calculator{
 		let age = ageAtEarth * 11.86;
 		return age;
 	}
-	
-	
+
+
 
 }
