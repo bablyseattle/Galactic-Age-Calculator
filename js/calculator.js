@@ -20,4 +20,15 @@ export class Calculator{
 		let differenceInSec = differenceInMS/1000;	
 		return differenceInSec;
 	}
+
+	ageInMercury(ageAtEarth){
+		let age = ageAtEarth * 0.24;
+		return age;
+	}
+
+	ageInVenus(ageAtEarth){
+		let age = ageAtEarth * 0.62;
+		return age;
+	}
+
 }
