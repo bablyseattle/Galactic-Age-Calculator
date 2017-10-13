@@ -31,4 +31,9 @@ export class Calculator{
 		return age;
 	}
 
+	ageInMars(ageAtEarth){
+		let age = ageAtEarth * 1.88;
+		return age;
+	}
+
 }
