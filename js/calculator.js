@@ -24,7 +24,7 @@ export class Calculator{
 	dateDifferenceInYear(startDate, endDate){
 		let secs = this.dateDifference(startDate, endDate);
 		let years = secs / (365 * 24 * 3600);
-		years = Math.round(years)
+		years = Math.floor(years)
 		return years; 
 
 	}

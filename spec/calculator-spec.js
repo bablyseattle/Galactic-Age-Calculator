@@ -15,7 +15,7 @@ describe('Calculator', function(){
 	});
 
 	it('should calculate date difference in years', function(){
-		expect(mycalculator.dateDifferenceInYear("11/05/1992", "10/13/2017")).toEqual(25)
+		expect(mycalculator.dateDifferenceInYear("11/05/1992", "10/13/2017")).toEqual(24)
 	});
 
 	it('should calculate age in mercury', function(){
