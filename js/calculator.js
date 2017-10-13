@@ -12,4 +12,12 @@ export class Calculator{
 		let seconds = ageInYears * daysInYear * hoursInDay * secondsInHour;
 		return seconds;
 	}
+
+	dateDifference(startDate, endDate){
+		let day_start = new Date(startDate);
+		let day_end = new Date(endDate);
+		let differenceInMS = day_end - day_start;
+		let differenceInSec = differenceInMS/1000;	
+		return differenceInSec;
+	}
 }
