@@ -36,4 +36,9 @@ export class Calculator{
 		return age;
 	}
 
+	ageInJupitor(ageAtEarth){
+		let age = ageAtEarth * 11.86;
+		return age;
+	}
+
 }

@@ -25,4 +25,8 @@ describe('Calculator', function(){
 	it('should calculate age in Mars', function(){
 		expect(mycalculator.ageInMars(25)).toEqual(47)
 	});
+
+	it('should calculate age in Jupitor', function(){
+		expect(mycalculator.ageInJupitor(25)).toEqual(296.5)
+	});
 });
