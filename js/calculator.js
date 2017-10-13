@@ -40,5 +40,7 @@ export class Calculator{
 		let age = ageAtEarth * 11.86;
 		return age;
 	}
+	
+	
 
 }

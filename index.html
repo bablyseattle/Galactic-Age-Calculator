@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Super Galactic Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="well">
+        <h1>Super Galactic Age Calculator</h1>
+
+        <form class="form-inline">
+          <h4>Birthday:</h4>
+          <div class="form-group">
+            <select id='gMonth1'class ="form-control">
+              <option value=''>--Select Month--</option>
+              <option selected value='1'>Janaury</option>
+              <option value='2'>February</option>
+              <option value='3'>March</option>
+              <option value='4'>April</option>
+              <option value='5'>May</option>
+              <option value='6'>June</option>
+              <option value='7'>July</option>
+              <option value='8'>August</option>
+              <option value='9'>September</option>
+              <option value='10'>October</option>
+              <option value='11'>November</option>
+              <option value='12'>December</option>
+            </select> 
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="date" placeholder="Day">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="date" placeholder="Year">
+            </div>
+          <button type="submit" class="btn btn-default">Check</button>
+        </form>
+        <br><br><br>
+        <div class="result">
+          <p>Your age on earth is seconds: <span class="ageInSec"></span>seconds</p>
+          <p>Your age on Mercury: <span class="ageInMercury"></span>years</p>
+          <p>Your age on Mars: <span class="ageInMars"></span>years</p>
+          <p>Your age on Venus: <span class="ageInVenus"></span>years</p>
+          <p>Your age on Jupitor: <span class="ageInJupitor"></span>years</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
