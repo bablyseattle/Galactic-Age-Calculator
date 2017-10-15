@@ -48,7 +48,28 @@ export class Calculator{
 		let age = ageAtEarth * 11.86;
 		return age;
 	}
+	lifeExpectancy(planet){
+		let life = 0;
+		var that = this;
+		if (planet == "earth")
+			 life = 72;
+		else if (planet == "mercury")
+			life = that.ageInMercury(72)
+		else if (planet == "venus")
+			life = that.ageInVenus(72)
+		else if (planet == "mars")
+			life = that.ageInMars(72)
+		else if (planet == "jupitor")
+			life = that.ageInJupitor(72)
 
+		return life;
+	}
+
+	yearsleft(age, planet){
+		let years = 0;
+		years = this.lifeExpectancy(planet) - age;
+		return years;
+	}
 
 
 }
